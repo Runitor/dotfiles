@@ -137,3 +137,6 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+# Use Starship shell for bash
+eval "$(starship init bash)"
