@@ -140,3 +140,5 @@ ex ()
 
 # Use Starship shell for bash
 eval "$(starship init bash)"
+
+clear && neofetch
