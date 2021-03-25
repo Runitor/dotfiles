@@ -193,3 +193,6 @@ gaps outer 1
 
 # remove title
 for_window [class="^.*"] border pixel 1
+
+# set background picture
+exec feh --bg-scale ~/Repositories/wallpapers/0001.jpg
