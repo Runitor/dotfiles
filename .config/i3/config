@@ -196,3 +196,6 @@ for_window [class="^.*"] border pixel 1
 
 # set background picture
 exec feh --bg-scale ~/Repositories/wallpapers/0001.jpg
+
+# start picom for some transparency
+exec --no-startup-id picom -b -f
