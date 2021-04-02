@@ -35,9 +35,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec kitty
-
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -182,9 +179,12 @@ bindsym $mod+r mode "resize"
 
 ### CUSTOMS ###
 
-#interactive screenshot by pressing printscreen
+# kitty as default terminal emulator
+bindsym $mod+Return exec kitty
+
+# interactive screenshot by pressing printscreen
 bindsym Print exec gnome-screenshot -i 
-#crop-area screenshot by pressing Mod + printscreen
+# crop-area screenshot by pressing Mod + printscreen
 bindsym $mod+Print exec gnome-screenshot -a
 
 # Set inner/outer gaps
@@ -199,3 +199,6 @@ exec feh --bg-scale ~/Repositories/wallpapers/0001.jpg
 
 # start picom for some transparency
 exec --no-startup-id picom -b
+
+### Workspace 1 ###
+exec i3-resurrect restore -w 1
