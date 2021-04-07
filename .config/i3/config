@@ -179,6 +179,10 @@ bindsym $mod+r mode "resize"
 
 ### CUSTOMS ###
 
+# smart gaps & borders
+smart_gaps on
+smart_borders on
+
 # kitty as default terminal emulator
 bindsym $mod+Return exec kitty
 
@@ -202,3 +206,7 @@ exec --no-startup-id picom -b
 
 ### Workspace 1 ###
 exec i3-resurrect restore -w 1
+
+### Russian keyboard layout ###
+exec "setxkbmap -layout us,ru"
+exec "setxkbmap -option 'grp:alt_shift_toggle'"
