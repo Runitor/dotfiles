@@ -205,8 +205,8 @@ exec feh --bg-scale ~/Repositories/wallpapers/0001.jpg
 exec --no-startup-id picom -b
 
 ### Russian keyboard layout ###
-exec setxkbmap -layout us,ru
-exec setxkbmap -option 'grp:alt_shift_toggle'
+exec_always setxkbmap -layout us,ru
+exec_always setxkbmap -option 'grp:alt_shift_toggle'
 
 ### Workspace 1 ###
 exec i3-resurrect restore -w 1
